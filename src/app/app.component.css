@@ -1,0 +1,89 @@
+.main-content{
+    margin-top:100px;
+    margin-left:500px;
+    margin-right:500px;
+    margin-bottom: 50px;
+    padding:50px;
+    align-items: center;
+    display: flex;
+}
+.content-area{ 
+    padding: 20px; 
+    background-color: #c8d1d2 ; 
+    flex: 1;
+  }
+.products-display 
+{ 
+padding:60px 120px;
+background-color: #cacbcc; 
+}
+    
+h1{
+    margin:auto;
+    text-align:center ;
+        color: #21618C;
+        padding: 0px 20px;
+
+} 
+.load
+{
+    color:rgb(107, 190, 234)
+
+}
+.division {
+    display: inline-block;
+    border: 1px solid red;
+    padding: 1rem 1rem;
+}
+.submit
+{
+    background-color: rgb(11, 155, 103);
+
+}
+.fetch{
+    background-color: rgb(238, 109, 131);
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 90%;
+    background-color: #4f3fe6;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .aoru
+  {
+    background-color: green;
+  }
+.d{
+    color:white;
+    background-color: red;
+}
+.fetch{
+    color:white;
+    background-color: rgb(69, 234, 72);
+}
+.clear{
+    color:white;
+    background-color: #fd61ad;
+}
+button{
+border:None;
+padding:8px 15px;
+margin:0px 5px;
+}
+.e{
+background-color: aqua;
+}

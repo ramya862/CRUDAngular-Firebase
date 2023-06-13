@@ -1,0 +1,49 @@
+<div class="main-content">
+  <form #productsForm="ngForm" (ngSubmit)="onProductCreate()">
+  <h1>Manage Products</h1> 
+  <div class="content-area">
+    <label><b>Product Name</b></label><br>
+    <input type="text" name="pName" [(ngModel)]="products.pName"><br><br>
+    <label><b>Product Description</b></label><br>
+    <input type="text" name="desc" [(ngModel)]="products.desc"><br><br>
+    <label><b>Product Price</b></label><br>
+    <input type="text" name="price" [(ngModel)]="products.price"><br><br>
+    <input type="submit"class="aoru" value="{{editMode ?' Update Product':'Add Product'}}"ngModel>
+  </div>
+  </form><br><br>
+  <h1><b>List of the Products</b></h1>
+
+<div class="products-display">
+  <table id="table">
+    <tr>
+      <th>ID</th>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Price</th>
+    <th></th>
+    </tr>
+    <tr *ngIf="allProducts.length<1 && !isFetching">
+      <td colspan="5">No Products Available</td>
+
+    </tr>
+    <tr *ngIf="isFetching">
+      <td colspan="5" class="load">Loading....</td>
+    </tr>
+    <tr *ngFor="let prod of allProducts; index as i">
+      <td>{{i+1}}</td>
+      <td>{{prod.pName}}</td>
+      <td>{{prod.desc}}</td>
+      <td>{{prod.price}}</td>
+
+     <td><button class="d" (click)="onDeleteProduct(prod.id)">Delete</button></td>
+    <td><button class='e' (click)="onEditClicked(prod.id)">Edit</button></td>
+    </tr>
+  </table>
+  <hr>
+  <button class="fetch" (click)="onProductsFetch()">Fetch
+  </button>
+
+  <button class="clear" (click)="onclearProduct()">Clear</button>
+
+</div>
+  </div> 

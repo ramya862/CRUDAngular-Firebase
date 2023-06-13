@@ -1,0 +1,8 @@
+{
+    "/*":
+    {
+        "target":"https://apiintegration-52bc7-default-rtdb.firebaseio.com/",
+        "secure":false,
+        "logLevel":"debug"
+    }
+}
